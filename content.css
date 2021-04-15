@@ -1,0 +1,203 @@
+.cool-container {
+position:fixed;
+bottom:25px;
+right:-170px;
+z-index:99999999;
+}
+
+.realeye{
+    position:relative;
+    width: 450px;
+    height: 450px;
+}
+
+
+#iris{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 250px;
+  height: 250px;
+  right: 0;
+  position: fixed;
+  bottom: 0;
+  transform-origin: center center;   
+}
+
+#iris2{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 250px;
+  height: 250px;
+  right: 0;
+  position: fixed;
+  bottom: 0;
+  transform-origin: center center;   
+}
+.eye {
+
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 41px;
+
+  border-radius: 60%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.eye-left {
+    left: 120px;
+    top: 90px;
+    background: black;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+/*
+ 
+ .eye-inner {
+position: relative;
+display: inline-block;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+background-color: black;
+border-radius: 50%;
+margin-left: 4px;
+margin-top: 4px;
+}
+
+     .eye-inner {
+  }
+
+   .eye-inner:after {
+      position: absolute;
+      top: 0px;
+      left: 80px;
+       right: 50px;
+      width: 60px;
+      height: 60px;
+      background: black;
+      border-radius: 50%;
+      content: ' ';
+    }
+*/
+
+
+/*//put everything else here */
+
+
+.bubble{
+position:fixed;
+bottom:300px;
+right:0px;
+width: 100%;
+z-index:99999999;
+background-color: black;
+color: white;
+font-size:20px;  
+display: none;
+}
+
+.bubble.show{
+    display: block;
+    animation: disappear 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 20s;
+}
+
+      @-moz-keyframes disappear {
+            0% {
+             opacity: 1;
+            }
+          90% {
+             opacity: 1;
+          }
+            100% {
+             opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes disappear  {
+            0% {
+               opacity: 1;
+            }
+            90% {
+             opacity: 1;
+          }
+            100% {
+               opacity: 0;
+            }
+        }
+        
+        @keyframes disappear  {
+            0% {
+              opacity: 1;
+            }
+            90% {
+             opacity: 1;
+          }
+            100% {
+              opacity: 0;
+            }
+        }
+
+.bubble {
+            height: 50px;
+            overflow: hidden;
+        }
+        
+        .bubble p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(90%);
+            -webkit-transform: translateX(90%);
+            transform: translateX(90%);
+/*            //play with the timing here FOR LATERR*/
+            -moz-animation: scroll-left 7s linear infinite;
+            -webkit-animation: scroll-left 7s linear infinite;
+            animation: scroll-left 12s linear infinite;
+
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
